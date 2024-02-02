@@ -9,4 +9,8 @@ class Movie extends Model
 {
     use HasFactory;
     protected $fillable = ['title','description','date', 'poster_image', 'duration'];
+
+    public function type(){
+        return $this->belongsTo(Type::class);
+    }
 }

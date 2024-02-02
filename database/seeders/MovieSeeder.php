@@ -20,6 +20,7 @@ class MovieSeeder extends Seeder
         $movie1->date = Carbon::create(1951, 11, 3);
         $movie1->duration = 238;
         $movie1->poster_image = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Poster_-_Gone_With_the_Wind_01.jpg/800px-Poster_-_Gone_With_the_Wind_01.jpg";
+        $movie1->type_id = 2;
         $movie1->save();
 
         $movie2= new Movie();
@@ -28,6 +29,7 @@ class MovieSeeder extends Seeder
         $movie2->date = Carbon::create(1998, 1, 16);
         $movie2->duration = 210;
         $movie2->poster_image = "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZHKcyuoqlsdtSxgAvAfp9XyHrFDKLp-7l4OAVznw7BZViQGk0";
+        $movie2->type_id = 2;
         $movie2->save();
 
         $movie3= new Movie();
@@ -36,6 +38,7 @@ class MovieSeeder extends Seeder
         $movie3->date = Carbon::create(2002, 12, 27);
         $movie3->duration = 113;
         $movie3->poster_image = "https://pad.mymovies.it/filmclub/2003/01/020/locandina.jpg";
+        $movie3->type_id = 1;
         $movie3->save();
     }
 }

@@ -15,6 +15,11 @@
             <li class="list-group-item"><i>Description</i>: {{$movie->description}}</li>
             <li class="list-group-item"><i>Exit date</i>: {{$movie->date}}</li>
             <li class="list-group-item"><i>Duration (min)</i>: {{$movie->duration}}</li>
+            @if ($movie->type)
+            <li class="list-group-item"><i>Category</i>: {{$movie->type->type}}</li>                
+            @else
+            <li class="list-group-item"><i>Category</i>: No category</li>  
+            @endif
           </ul>
     </div>
 </div>
